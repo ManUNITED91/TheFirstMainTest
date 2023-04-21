@@ -4,4 +4,7 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+string[] firstArr = { "Arsenal", "Hello", "you", "32", "8" };
+string[] secArr = { "Russia", "Denmark", "Kazan" };
+string[] thirdArr = {"Hello","2","world",":-)"};
 

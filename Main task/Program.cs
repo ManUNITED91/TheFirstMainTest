@@ -6,7 +6,7 @@
 
 string[] firstArr = { "Arsenal", "Hello", "you", "32", "8" };
 string[] secArr = { "Russia", "Denmark", "Kazan" };
-string[] thirdArr = {"Hello","2","world",":-)"};
+string[] thirdArr = { "Hello", "2", "world", ":-)" };
 
 string[] ArrString(string[] arr)
 {
@@ -31,4 +31,20 @@ string[] ArrString(string[] arr)
     }
     return arr2;
 }
+
+void Print(string[] arr)
+{
+    Console.Write("---> [ ");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($" {arr[i]} ");
+
+    }
+    Console.Write(" ]");
+    Console.WriteLine();
+
+}
+Print(ArrString(firstArr));
+Print(ArrString(secArr));
+Print(ArrString(thirdArr));
 

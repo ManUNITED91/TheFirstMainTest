@@ -8,3 +8,27 @@ string[] firstArr = { "Arsenal", "Hello", "you", "32", "8" };
 string[] secArr = { "Russia", "Denmark", "Kazan" };
 string[] thirdArr = {"Hello","2","world",":-)"};
 
+string[] ArrString(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+
+    string[] arr2 = new string[count];
+    int index = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            arr2[index] = arr[i];
+            index++;
+        }
+    }
+    return arr2;
+}
+
